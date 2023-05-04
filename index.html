@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+  <header id="header">
+    <h1 id="title">FreeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform </p>
+    </header>
+    <form id="survey-form">
+     <label id="name-label"> NAME:
+       <input id="name" type="text" placeholder="Enter your name" required></label>
+       <label id="email-label"> Email:
+      <input id="email" type="email" placeholder="Enter your email" required></label>
+      <label id="number-label"> Age:
+      <input id="number" type="number" min="18" max="90" placeholder="Enter your age" required></label>
+
+
+      <label id="role">Which option best describes your current role?
+        <select id="dropdown"> 
+        <option disabled selected value>Select An Option</option>
+        <option>Student</option>
+        <option>Govt. Job</option>
+        <option>Private Job</option>
+        <option>Business</option>
+        <option>Other</option>
+        </select>
+      </label> 
+      
+      
+        <label id="role">Would you recommend freeCodeCamp to a friend?
+          <label id="definitely"><input type="radio" name="indoor-outdoor" value="definitely">Definitely</label>
+          <label id="maybe"><input type="radio" name="indoor-outdoor" value="maybe" >Maybe</label>
+          <label id="not-sure"><input type="radio" name="indoor-outdoor" value="not-sure">Not Sure</label>
+        </label>
+
+           <label id="role">What is your favorite feature of freeCodeCamp?
+      <select id="dropdown"> 
+        <option disabled selected value>Select An Option</option>
+        <option>Challenges</option>
+        <option>Projects</option>
+        <option>Community</option>
+        <option>Open Source</option>
+        </select>
+        </label>
+
+
+        <label id="checkbox">What would you like to see improved?
+        <label id="front-end">
+          <input type="checkbox" value="front-end">Front-end
+          </label>
+           <label id="back-end">
+          <input type="checkbox" value="back-end">Back-end
+          </label>
+           <label id="dbms">
+          <input type="checkbox" value="dbms">Data Base Management(DBMS)
+          </label>
+           <label id="python">
+          <input type="checkbox" value="python">Python
+          </label>
+           <label id="data-structure">
+          <input type="checkbox" value="data-structure">Data Structure
+          </label>
+        </label>
+
+          <label id="comments">Any comments or suggestions?
+          <textarea class="comments" placeholder="Enter your comment here..."></textarea>
+        </label>
+          <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
